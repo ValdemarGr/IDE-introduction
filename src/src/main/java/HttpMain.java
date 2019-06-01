@@ -17,7 +17,7 @@ public class HttpMain {
     private static class HelloHandler implements HttpHandler {
         @Override
         public void handle(HttpExchange exchange) throws IOException {
-            String response = "Hello world!!!";
+            String response = "Hello IMADA!!!";
             exchange.sendResponseHeaders(200, response.length());
             OutputStream outputStream = exchange.getResponseBody();
             outputStream.write(response.getBytes());
